@@ -1,7 +1,9 @@
-# This -*- perl -*- script writes the Makefile for this dist
-# Time-stamp: "2001-05-25 08:44:43 MDT"
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+# This -*-perl-*- script writes the Makefile for installing this distribution.
+#
+# See "perldoc perlmodinstall" or "perldoc ExtUtils::MakeMaker" for
+# info on how to control how the installation goes.
+#
+#                                       Time-stamp: "2004-12-29 20:20:41 AST"
 
 require 5.005; # we need m/...\z/
 use strict;
@@ -13,16 +15,5 @@ WriteMakefile(
     'PREREQ_PM'    => {	
 	                 'Locale::Maketext' => 1.01,
 	              },
-    'dist'         => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    'dist'         => { COMPRESS => 'gzip -6f', SUFFIX => 'gz', },
 );
-
-package MY;
-
-sub libscan
-{ # Determine things that should *not* be installed
-    my($self, $path) = @_;
-    return '' if $path =~ m/~/;
-    $path;
-}
-
-__END__

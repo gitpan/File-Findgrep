@@ -1,7 +1,7 @@
 
 package File::Findgrep;
 require 5.005;  # we want qr's !
-$VERSION = '0.01';
+$VERSION = '0.02';
 use strict;
 
 # POD AT THE END!
