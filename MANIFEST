@@ -1,0 +1,11 @@
+lib/File/Findgrep.pm
+lib/File/Findgrep/I18N.pm
+lib/File/Findgrep/I18N/i_default.pm
+lib/File/Findgrep/I18N/en_us.pm
+lib/File/Findgrep/I18N/fr.pm
+lib/File/Findgrep/I18N/en.pm
+ChangeLog
+MANIFEST
+Makefile.PL
+README
+test.pl
